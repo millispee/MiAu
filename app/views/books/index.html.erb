@@ -1,0 +1,6 @@
+<h1>See the availabe books</h1>
+<% @books.each do |book| %>
+  <h2><%= book.title %></h2>
+  <p><%= book.author %></p>
+  <%#= cl_image_tag book.cover_image %>
+<% end %>

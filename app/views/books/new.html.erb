@@ -1,0 +1,13 @@
+<h1>Create a Book</h1>
+<%= simple_form_for @book do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :description %>
+  <label class="btn btn-info">
+    <i class="fas fa-images"></i> Add cover image
+    <span style="display:none;">
+      <%= f.input :cover_image, as: :file %>
+    </span>
+  </label>
+  <%= f.submit "Upload Book", class:'btn btn-primary' %>
+<% end %>
